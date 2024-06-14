@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Bootstrap Email App - Mesa</title>  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  
+    <!-- Header -->  
+  <header class="text-black text-center py-3">    
+    <div class="container-fluid">      
+      <div class="row">        
+        <div class="col">          
+          <h1>My Email App</h1>        
+        </div>
+        <div class="col-auto"><!--FULL SCREEN DROPDOWN MENU-->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sonia.MesaBVT2024@myemail.com
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">ACCOUNT SETTINGS</a>
+              <a class="dropdown-item" href="#">BLOCKED</a>
+              <a class="dropdown-item" href="#">LOG OUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- Main Content -->  
+<div class="container-fluid mt-3">    
+  <div class="row">      
+  <!-- Sidebar -->      
+  <div class="col-md-2">        
+    <div class="mb-3">          
+      <button class="btn btn-primary btn-block">Compose</button>        
+    </div>        
+    <div class="mb-3">        
+
+    </div>        
+    <div class="input-group mb-3">          
+      <input type="text" class="form-control" placeholder="Search...">          
+      <div class="input-group-append">            
+        <button class="btn btn-outline-secondary" type="button">Search</button>          
+      </div>        
+    </div>        
+    <div class="list-group">          
+      <a href="#" class="list-group-item list-group-item-action">INBOX</a>          
+      <a href="#" class="list-group-item list-group-item-action">DRAFTS</a>          
+      <a href="#" class="list-group-item list-group-item-action">SENT</a>          
+      <a href="#" class="list-group-item list-group-item-action">TRASH</a>          
+      <a href="#" class="list-group-item list-group-item-action">SPAM</a>        
+    </div>      
+  </div>
+
+    <!-- Emails List -->      
+  <div class="col-md-3">        
+    <div class="list-group">          
+      <a href="#" class="list-group-item list-group-item-action active">Selected E-mail</a>          
+      <a href="#" class="list-group-item list-group-item-action">Unread E-mail</a>          
+      <a href="#" class="list-group-item list-group-item-action">Unread E-mail 2</a>          
+      <a href="#" class="list-group-item list-group-item-action">Read E-mail</a>          
+      <a href="#" class="list-group-item list-group-item-action">Read E-mail 2</a>        
+    </div>      
+  </div>
+ 
+    <!-- Email Details -->      
+    <div class="col-md-7">        
+      <div class="card">          
+        <div class="card-body">            
+          <h5 class="card-title">Email Subject</h5>   <!--FULL EMAIL TEXT  NOT SHOWING ON FULL SCREEN JUST MOBILE/TABLET -->    
+          <p class="card-text">We are thrilled to inform you that you have been accepted into the 244 Code Academy Cohort. We welcome you to an exciting journey of learning, growth, and innovation.</p>            
+          <button class="btn btn-secondary btn-block">Reply</button>          
+        </div>        
+      </div>      
+    </div>    
+  </div>  
+</div>
+
+    <!-- Footer -->  
+    <footer class="text-black text-center py-3 mt-5">    
+      &copy; 2024 My Email App  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
+</body>
+
+</html>    
