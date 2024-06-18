@@ -10,7 +10,7 @@
 
 <body>
   
-    <!-- Header -->  
+    <!-- HEADER -->  
   <header class="text-black text-center py-3">    
     <div class="container-fluid">      
       <div class="row">        
@@ -33,15 +33,49 @@
     </div>
   </header>
  
-  <!-- Main Content -->  
+  <!-- MAIN CONTENT -->  
 <div class="container-fluid mt-3">    
   <div class="row">      
-  <!-- Sidebar -->      
+  <!-- SIDEBAR -->      
   <div class="col-md-2">        
     <div class="mb-3">          
-      <button class="btn btn-primary btn-block">Compose</button>        
-    </div>        
-    <div class="mb-3">        
+      <!-- BUTTON TRIGGER MODAL -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  COMPOSE
+</button>
+
+<!-- MODAL -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NEW EMAIL</h1>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden=""true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="emailSubject">Subject</label>
+            <input type="text" class="form-control" id="emailSubject" placeholder="Enter subject">
+          </div>
+          <div class="form-group">
+            <label for="emailBody">Body</label>
+            <textarea class="form-control" id="emailBody" rows="4" placeholder="Enter email body"></textarea>
+          </div>
+        </form>
+      </div>
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-outline-secondary">SAVE DRAFT</button>
+        <button type="button" class="btn btn-primary">SEND</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
 
     </div>        
     <div class="input-group mb-3">          
@@ -59,18 +93,18 @@
     </div>      
   </div>
 
-    <!-- Emails List -->      
+    <!-- EMAILS LIST -->      
   <div class="col-md-3">        
-    <div class="list-group">          
-      <a href="#" class="list-group-item list-group-item-action active">Selected E-mail</a>          
-      <a href="#" class="list-group-item list-group-item-action">Unread E-mail</a>          
-      <a href="#" class="list-group-item list-group-item-action">Unread E-mail 2</a>          
-      <a href="#" class="list-group-item list-group-item-action">Read E-mail</a>          
-      <a href="#" class="list-group-item list-group-item-action">Read E-mail 2</a>        
+    <div class="list-group">              
+      <a href="#" class="list-group-item list-group-item-action active">E-mail</a>          
+      <a href="#" class="list-group-item list-group-item-action">E-mail 2</a>          
+      <a href="#" class="list-group-item list-group-item-action">E-mail 3</a>          
+      <a href="#" class="list-group-item list-group-item-action">E-mail 4</a>     
+      <a href="#" class="list-group-item list-group-item-action">E-mail 4</a>      
     </div>      
   </div>
  
-    <!-- Email Details -->      
+    <!-- EMAIL DETAILS -->      
     <div class="col-md-7">        
       <div class="card">          
         <div class="card-body">            
@@ -83,7 +117,7 @@
   </div>  
 </div>
 
-    <!-- Footer -->  
+    <!-- FOOTER -->  
     <footer class="text-black text-center py-3 mt-5">    
       &copy; 2024 My Email App  </footer>
 
